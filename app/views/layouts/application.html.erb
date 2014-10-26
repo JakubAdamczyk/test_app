@@ -13,7 +13,7 @@
       Witaj <%= User.find(current_user.id).email %>!
     </li>
     <li>
-      <%= link_to 'Administracja', '/posts' %>
+      <%= link_to 'Administracja', edit_user_registration_path %>
     </li>
     <li>
     <%= link_to('Wyloguj się', destroy_user_session_path, :method => :delete) %>        

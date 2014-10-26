@@ -8,6 +8,7 @@ class PostsControllerTest < ActionController::TestCase
 
   setup do
     @post = posts(:one)
+    @posts = Post.all
   end
 
   test "should get index" do
