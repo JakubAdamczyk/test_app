@@ -1,5 +1,6 @@
 TestApp::Application.routes.draw do
   devise_for :users
+  
   resources :posts
   
   get 'post/publish' => 'posts#publish'
